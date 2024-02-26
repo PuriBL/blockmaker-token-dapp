@@ -6,11 +6,13 @@ export default function AppLayout({children}){
     return (
         <>
             <Header/>
-            <main>{children}</main>
+            <main className= 'min-h-[85vh]'>{children}</main>
             <Footer/>
-        </>          
+        </>
     )
 }
+
 AppLayout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired   
 }
+
