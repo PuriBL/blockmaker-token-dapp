@@ -1,7 +1,12 @@
+import {useAccount } from 'wagmi'
+
 export default function Home(){
-    return (
-        <div>
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        </div>
-    )
+    const {address, isConnecting, isDisconnected } = useAccount()
+
+    if (isConnecting) return <div>Connecting ... </div>
+    if (isDisconnected) return <div>Disconnected</div>
+
+    return <div>Connected Wallet: {address}</div>         
+    
 }
+
