@@ -5,13 +5,13 @@ export default function Button({type = 'button', onClick, disabled, children, is
     <button
     type={type}
         className="bg-indigo-500 hover:bg-indigo-700
-        text-white font-bold py-2 rounded-lg disabled:opacity-75
-        disabled:cursor-not-al lowed"
+        text-white font-bold py-2 px-4 rounded-lg disabled:opacity-75
+        disabled:cursor-not-allowed"
         disabled= {disabled}
         onClick={onClick}
     >
-        <span className='flex items-center gap-2'>
-            isLoad{ing && <LoadingSpinner className="h-5 w-5"/>}
+        <span className="flex items-center gap-2 justify-center">
+            {isLoading && <LoadingSpinner className="h-5 w-5"/>}
             {children}            
         </span>        
         </button>

@@ -10,7 +10,6 @@ export default function Header() {
             {/*logo para versión mobile aclaración*/}                
             <ConnectKitButton showBalance/>
 
-
         </header>
     )
 }

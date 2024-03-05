@@ -1,5 +1,4 @@
-import Footer from '../../Footer'
-import Header from '../../Header'
+import { Header, Footer } from '../../index'
 import PropTypes from 'prop-types'
 
 export default function AppLayout({children}){

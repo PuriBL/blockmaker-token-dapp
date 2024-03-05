@@ -21,9 +21,9 @@ export default function Owner() {
   if (isLoading) return <OwnerSkeleton />
 
   return (
-    <section className="flex flex-col bg-white border shadow p-4 rounded w-[360px] sm:w-[469px]">
-      <Title>Owner</Title>
-      <p className="text-xs sm:text-sm bg-gray-100 p-2 rounded-md">{data}</p>
+    <section className="bg-white p-4 shadow w-fit rounded-lg border"> 
+    <Title>Owner</Title>   
+    <p className="text-xs sm:text-sm bg-gray-100 p-2 rounded-md">{data}</p>
     </section>
   )
 }
